@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    min-height: 70px;
+    // background-color: rgb(253, 253, 253);
+}
+
+._Desk{
+    width: 100%;
+    height: 100%;
+   
+    >li{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-top: 20px;
+        padding-right: 90px;
+       
+
+       
+
+        >a{
+            text-decoration: none;
+            color:inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           }
+    }
+    >h1{
+        padding-top: 14px;
+        color: rgba(5, 5, 5, 0.795);
+        // border: 1px solid red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+   
+}
+
+#toggle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    cursor: pointer;
+    overflow: hidden;
+        >span{
+            display: flex;
+            width: 80%;
+            height: 2px;
+            background-color: white;
+            border-radius: 2px;
+            transition: .4s;
+        
+        }
+
+     >span:nth-of-type(1) {
+            transform-origin: top left;
+        }
+
+    >span:nth-of-type(3) {
+            transform-origin: bottom left;
+        }
+}
+
+#mobile{
+    width: 100%;
+    transition: 1s;
+    transform: translateX(-100%);
+}
+._Mob{
+    background-color: rgb(0, 0, 0) !important;
+    >li{
+        list-style-type: none;
+        height: 50px;
+        &:hover{
+            background-color: aliceblue;
+        }
+        >a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: black;
+
+            }
+        }
+    }
+}
+.mmm{
+    background-color: black;
+    // color: white !important;
+}
+.container{
+    width: 98%;
+    height: 89vh;
+    // border: 2px solid red;
+     .row{
+        height: 89vh;
+     }
+}
+
+.yas{
+    // background-color: aqua;
+    padding-top: 220px;
+    padding-left: 20px;
+    >h1{
+        padding-top: 123px;
+        padding-bottom: 23px;
+        font-size: 56px;
+    }
+    >p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    >a:nth-of-type(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 60px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(238, 238, 238);
+        margin-top: 40px;
+        margin-left: 30px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 28px;
+        box-shadow: 11px 11px 11px #0c0c0c, -11px -11px 39px #0d0e0e;
+
+    }
+ 
+    >.cvto{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 30px  7px !important;
+
+    }
+}
+
+.non{
+    width: 45px;
+    font-size: 20px;
+    position: fixed;
+    top: 15px; right: 15px;
+    filter: drop-shadow(5px 5px 20px gold);
+    cursor: pointer;
+    >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.boop{
+    color: black;
+}
+.maan{
+    background-color: rgb(12, 12, 12);
+    color: white;
+
+    .yas{
+        >a:nth-of-type(1){
+            background-color: white;
+            color: black;
+            font-size: 19px;
+            box-shadow: 8px 8px 20px #cccccc, -8px -8px 20px #cacccc;
+
+        }
+    }
+
+    .boop{
+        color: white;
+    }
+
+    ._Desk{
+        h1{
+            color: rgba(255, 255, 255, 0.89);
+        }
+    }
+    .mmm{
+        background-color: rgb(255, 255, 255);
+    }
+    #toggle{
+        span{
+            background-color: black;
+        }
+    }
+
+    ._Mob{
+        background-color: white !important;
+        >li{
+            &:hover{
+                background-color: black;
+            }
+            a{
+                color: black;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
